@@ -1,0 +1,240 @@
+/*导入图片作为背景图*/
+#css-zen-garden{
+	width: 1350px;
+	height: 1800px;
+	background-image: url("../img/timg.jpeg");
+	padding: 10px;
+}
+
+/*css Zen Garden标题居中，字体发光效果*/
+#pageHeader h1{
+	text-align:center;
+}
+h1{
+	font-family: 'Audiowide';
+	text-align: center;
+	color: #222222;
+	font-size: 2em;
+	-webkit-transition: all 1.5s ease;
+	transition: all 1.5s ease;
+}
+h1:hover {
+	color: #fff;
+	-webkit-animation: Glow 1.5s ease infinite alternate;
+	animation: Glow 1.5s ease infinite alternate;
+}
+@-webkit-keyframes Glow {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #228DFF,
+		0 0 70px #228DFF,
+		0 0 80px #228DFF,
+		0 0 100px #228DFF,
+		0 0 150px #228DFF;
+	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #67CF,
+		0 0 35px #67CF,
+		0 0 40px #67CF,
+		0 0 50px #67CF,
+		0 0 75px #67CF;
+	}
+}
+@keyframes Glow {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #228DFF,
+		0 0 70px #228DFF,
+		0 0 80px #228DFF,
+		0 0 100px #228DFF,
+		0 0 150px #228DFF;
+	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #67CF,
+		0 0 35px #67CF,
+		0 0 40px #67CF,
+		0 0 50px #67CF,
+		0 0 75px #67CF;
+	}
+}
+
+/*The Beauty of CSS Design的左右平移效果*/
+h2{
+	position: relative;
+	animation: myfirst 5s infinite;
+}
+@keyframes myfirst
+{
+	0%   { left:0px; top:0px; }
+	25%  { left:1000px; top:0px; }
+	100% { left:0px; top:0px; }
+}
+@-webkit-keyframes myfirst{
+	0%   { left:0px; top:0px; }
+	25%  { left:0px; top:1000px; }
+	100% { left:0px; top:0px; }
+}
+
+/*文体居中*/
+#preamble {
+	text-align:center;
+}
+
+/*So What is This About?：阴影效果*/
+#preamble h3{
+	text-shadow: 5px 5px 5px #228DFF;
+}
+/*居中*/
+#quickSummary{
+	text-align:center;
+}
+/*导入边框图片*/
+#explanation  {
+	text-align:center;
+	border: 15px solid transparent;
+	width: 1242px;
+	height: 250px;
+	padding: 10px 20px;
+	-webkit-border-image:url(../img/border.png) 30 30 round;
+
+}
+#explanation h3{
+	font-family: 'Audiowide';
+	text-align: center;
+	font-size: 1.2em;
+	-webkit-transition: all 1.5s ease;
+	transition: all 1.5s ease;
+}
+ h3:hover {
+	color: lime;
+	-webkit-animation: Glow 1.5s ease infinite alternate;
+	animation: Glow 1.5s ease infinite alternate;
+}
+@-webkit-keyframes Glow {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #ffffff,
+		0 0 30px #ffffff,
+		0 0 40px limegreen,
+		0 0 70px limegreen,
+		0 0 80px limegreen,
+		0 0 100px limegreen,
+		0 0 150px limegreen;
+	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #ffffff,
+		0 0 15px #ffffff,
+		0 0 20px limegreen,
+		0 0 35px limegreen,
+		0 0 40px limegreen,
+		0 0 50px limegreen,
+		0 0 75px limegreen;
+	}
+}
+@keyframes Glow {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #ffffff,
+		0 0 30px #ffffff,
+		0 0 40px limegreen,
+		0 0 70px limegreen,
+		0 0 80px limegreen,
+		0 0 100px limegreen,
+		0 0 150px limegreen;
+	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #ffffff,
+		0 0 15px #ffffff,
+		0 0 20px limegreen,
+		0 0 35px limegreen,
+		0 0 40px limegreen,
+		0 0 50px limegreen,
+		0 0 75px limegreen;
+	}
+}
+#participation{
+	text-align:center;
+	border: 15px solid transparent;
+	width: 1242px;
+	height: 250px;
+	padding: 10px 20px;
+	-webkit-border-image:url(../img/timg23.jpeg) 30 30 round;
+	-o-border-image:url(../img/timg23.jpeg) 30 30 round;
+	border-image:url(../img/timg23.jpeg) 30 30 round;
+}
+#benefits{
+	text-align:center;
+	border: 15px solid transparent;
+	width: 1242px;
+	height: 150px;
+	padding: 20px 20px;
+	-webkit-border-image:url(../img/timg12.jpeg) 30 30 round;
+	-o-border-image:url(../img/timg12.jpeg) 30 30 round; /* Opera */
+	border-image:url(../img/timg12.jpeg) 30 30 round;
+}
+#requirements{
+	text-align:center;
+}
+#requirements h3{
+	position: relative;
+	animation: myfirst 4s infinite;
+}
+@keyframes myfirst
+{
+	0%   { left:0px; top:0px; }
+	25%  { left:400px; top:0px; }
+	100% { left:0px; top:0px; }
+}
+@-webkit-keyframes myfirst{
+	0%   { left:0px; top:0px; }
+	25%  { left:0px; top:400px; }
+	100% { left:0px; top:0px; }
+}
+#linkList {
+	text-align: center;
+	width: 450px;
+	height: 500px;
+	background-image: url("../img/timg11.jpeg");
+	padding: 10px;
+}
+#linkList{
+	position: relative;
+	animation: myfirst 4s infinite;
+}
+@keyframes myfirst
+{
+	0%   { left:0px; top:0px; }
+	25%  { left:500px; top:0px; }
+	100% { left:0px; top:0px; }
+}
+@-webkit-keyframes myfirst{
+	0%   { left:0px; top:0px; }
+	25%  { left:0px; top:500px; }
+	100% { left:0px; top:0px; }
+}
+#explanation{
+	moz-column-count:3;
+	-webkit-column-count:3;
+	column-count:3;
+}
+#participation{
+	moz-column-count:3;
+	-webkit-column-count:3;
+	column-count:3;
+}
+#footer a{
+	text-shadow: 3px 3px 3px darkblue;
+	font-size: 1.5em;
+}
